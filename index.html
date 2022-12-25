@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <title>News homepage</title>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./assets/images/logo.svg" alt="logo" class="">
+    </div>
+    <nav class="desktop desktop-nav">
+      <div class="desktop-links gray-blue">
+        <a href="#" style="margin-left: 0px;">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+      </div>
+    </nav>
+    <nav class="mobile">
+      <div class="burger">
+        <i class="fa-solid fa-bars fa-2x menu" onclick="onClick()"></i>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="popup mobile hide">
+      <div class="nothing" onclick="noShow()"></div>
+      <div class="slidein left">
+        <div class="cancel">
+          <i class="fa-solid fa-xmark fa-2x" onclick="noShow()"></i>
+        </div>
+        <div class="mobile-links">
+          <a href="#" style="margin-top: 0px">Home</a>
+          <a href="#">New</a>
+          <a href="#">Popular</a>
+          <a href="#">Trending</a>
+          <a href="#">Categories</a>
+        </div>
+      </div>
+    </div>
+    main content o
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

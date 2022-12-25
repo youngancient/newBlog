@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.desktop {
+  display: none;
+}
+.off-white {
+  color: hsl(36, 100%, 99%);
+}
+.light-grayblue {
+  color: hsl(233, 8%, 79%);
+}
+.gray-blue,
+.desktop-links a {
+  color: hsl(236, 13%, 42%);
+}
+.dark-blue,
+.mobile-links a {
+  color: hsl(240, 100%, 5%);
+}
+.bdr {
+  border: 2px solid black;
+}
+header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.nothing {
+  grid-area: transparent;
+}
+.slidein {
+  grid-area: slidein;
+  height: 100vh;
+  padding: 3rem;
+  background: hsl(36, 100%, 99%);
+}
+.popup {
+  position: absolute;
+  top: 0;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-areas: "transparent slidein";
+  overflow-x: hidden;
+}
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  transition: transform 0.3s ease;
+}
+.burger {
+  color: hsl(240, 100%, 5%);
+}
+.burger .menu {
+  z-index: 200;
+}
+.mobile-links a {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 20px;
+}
+.cancel{
+    display: flex;
+    justify-content: end;
+}
+/* Javascript classes */
+.left {
+  transform: translateX(200%);
+}
+.show {
+  transform: translateX(0);
+}
+.hide {
+  display: none;
+}
+.blur {
+  backdrop-filter: blur(1px);
+  background: hsla(200, 35%, 13%, 0.4);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop-nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .desktop-links a {
+    margin-left: 5rem;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .desktop-links a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+  .desktop {
+    display: block;
+  }
+  .logo {
+    width: 50%;
+  }
+  header {
+    display: flex;
+    padding: 2rem;
+    justify-content: unset;
+  }
+}
